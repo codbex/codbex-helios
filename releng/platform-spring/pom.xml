@@ -143,11 +143,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-engine-odata</artifactId>
-			<version>7.0.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-engine-web</artifactId>
 			<version>${dirigible.version}</version>
 		</dependency>
@@ -216,11 +211,6 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-ide-ui-debugger</artifactId>
-			<version>${dirigible.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-ide-ui-extensions</artifactId>
 			<version>${dirigible.version}</version>
 		</dependency>
 		<dependency>

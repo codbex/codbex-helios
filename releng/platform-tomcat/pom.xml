@@ -225,11 +225,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-ide-ui-extensions</artifactId>
-			<version>${dirigible.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-ide-ui-git</artifactId>
 			<version>${dirigible.version}</version>
 		</dependency>
