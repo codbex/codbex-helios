@@ -37,6 +37,13 @@
 
 	<dependencies>
 
+		<!-- Helios -->
+		<dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>codbex-helios-modules-all</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
 		<!-- Platform -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -196,11 +203,6 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-ide-ui-about</artifactId>
-			<version>${dirigible.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-ide-ui-branding</artifactId>
 			<version>${dirigible.version}</version>
 		</dependency>
 		<dependency>
