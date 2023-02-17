@@ -2,7 +2,7 @@
 
 Helios Edition contains JavaScript programming support standard components.
 
-It is good for exploration about the different features and their applicability in particular scenarios.
+It is good for exploration pro-code scenarios based on JavaScript language and Enterprise API.
 
 #### Docker
 
