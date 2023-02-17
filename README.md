@@ -7,6 +7,7 @@ It is good for exploration about the different features and their applicability 
 #### Docker
 
 ```
+docker pull ghcr.io/codbex/codbex-helios:latest
 docker run --name codbex-helios --rm -p 8080:8080 ghcr.io/codbex/codbex-helios:latest
 ```
 
