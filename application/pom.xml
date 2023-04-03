@@ -14,7 +14,6 @@
 	<artifactId>codbex-helios-application</artifactId>
 	<packaging>jar</packaging>
 
-
 	<dependencies>
 
 		<dependency>
@@ -29,6 +28,12 @@
 			<artifactId>dirigible-components-group-core</artifactId>
 			<version>${dirigible.version}</version>
 			<type>pom</type>
+			<exclusions>				
+				<exclusion>
+					<groupId>com.zaxxer</groupId>
+					<artifactId>HikariCP-java7</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		
 		<!-- Security -->
@@ -55,6 +60,22 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-group-engines</artifactId>
+			<version>${dirigible.version}</version>
+			<type>pom</type>
+		</dependency>
+		
+		<!-- API -->
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-group-api</artifactId>
+			<version>${dirigible.version}</version>
+			<type>pom</type>
+		</dependency>
+		
+		<!-- Resources -->
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-group-resources</artifactId>
 			<version>${dirigible.version}</version>
 			<type>pom</type>
 		</dependency>
@@ -263,20 +284,51 @@
 			<version>${dirigible.version}</version>
 		</dependency>
 		
-		<!-- API -->
+		<!-- Templates -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-group-api</artifactId>
+			<artifactId>dirigible-components-template-database-access</artifactId>
 			<version>${dirigible.version}</version>
-			<type>pom</type>
 		</dependency>
-		
-		<!-- Resources -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-group-resources</artifactId>
+			<artifactId>dirigible-components-template-database-table</artifactId>
 			<version>${dirigible.version}</version>
-			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-template-database-view</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-template-hello-world</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-template-html</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-template-http-client</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-template-job</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-template-listener</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-template-websocket</artifactId>
+			<version>${dirigible.version}</version>
 		</dependency>
 
 	</dependencies>
