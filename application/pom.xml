@@ -70,6 +70,14 @@
 			<artifactId>dirigible-components-group-api</artifactId>
 			<version>${dirigible.version}</version>
 			<type>pom</type>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.dirigible</groupId>
+					<artifactId>
+						dirigible-components-api-mongodb
+					</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		
 		<!-- Resources -->
