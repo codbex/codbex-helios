@@ -59,7 +59,7 @@
 		<!-- Engine -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-group-engines</artifactId>
+			<artifactId>dirigible-components-group-engines-core</artifactId>
 			<version>${dirigible.version}</version>
 			<type>pom</type>
 		</dependency>
@@ -67,23 +67,15 @@
 		<!-- API -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-group-api</artifactId>
+			<artifactId>dirigible-components-group-api-platform</artifactId>
 			<version>${dirigible.version}</version>
 			<type>pom</type>
-			<exclusions>
-				<exclusion>
-					<groupId>org.eclipse.dirigible</groupId>
-					<artifactId>
-						dirigible-components-api-mongodb
-					</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		
 		<!-- Resources -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-group-resources</artifactId>
+			<artifactId>dirigible-components-group-resources-core</artifactId>
 			<version>${dirigible.version}</version>
 			<type>pom</type>
 		</dependency>
