@@ -59,7 +59,7 @@
 		<!-- Engine -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-group-engines-core</artifactId>
+			<artifactId>dirigible-components-group-engines</artifactId>
 			<version>${dirigible.version}</version>
 			<type>pom</type>
 		</dependency>
