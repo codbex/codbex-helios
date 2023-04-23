@@ -225,11 +225,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-ide-ui-result</artifactId>
-			<version>${dirigible.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-search</artifactId>
 			<version>${dirigible.version}</version>
 		</dependency>
