@@ -59,10 +59,56 @@
 		<!-- Engine -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-group-engines</artifactId>
+			<artifactId>dirigible-components-group-engines-core</artifactId>
 			<version>${dirigible.version}</version>
 			<type>pom</type>
 		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-template</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-template-velocity</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-template-mustache</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-template-javascript</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-jobs</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-listeners</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-websockets</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-security</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-engine-openapi</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
+		
 		
 		<!-- API -->
 		<dependency>
