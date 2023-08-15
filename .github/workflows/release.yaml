@@ -1,25 +1,40 @@
-name: Release
+name: Release - Platform
 
 on:
   workflow_dispatch:
     inputs:
-      releaseVersion:
+      release-version:
         description: Release Version
         required: true
         default: 1.0.0
-      snapshotVersion:
+      snapshot-version:
         description: Snapshot Version
         required: true
         default: 1.0.0-SNAPSHOT
 
-run-name: 'version set to ${{ github.event.inputs.releaseVersion }} for release'
+run-name: 'version set to ${{ inputs.release-version }} for release'
 
 jobs:
-  release:
-    uses: ./.github/workflows/build.yaml
+  main:
+    uses: codbex/codbex-infra/.github/workflows/platform-release.yaml@main
     with:
-      dockerVersion: ${{ github.event.inputs.releaseVersion }}
-      releaseVersion: ${{ github.event.inputs.releaseVersion }}
-      snapshotVersion: ${{ github.event.inputs.snapshotVersion }}
-      pushImage: true
+      platform-name: codbex-helios
+      release-version: ${{ inputs.release-version }}
+      snapshot-version: ${{ inputs.snapshot-version }}
+      release-content: |
+        ## codbex-helios - ${{ inputs.release-version }}
+  
+        JavaScript and TypeScript Pro-Code Platform
+  
+        ## Deployment
+  
+        ```
+        docker run --name codbex-helios \
+        --rm -p 8080:8080 -p 8081:8081 \
+        ghcr.io/codbex/codbex-helios:${{ inputs.release-version }}
+        ```
+  
+        ## Access points:
+  
+        - [/services/web/ide/](http://localhost:8080/services/web/ide/) - Web IDE
     secrets: inherit
