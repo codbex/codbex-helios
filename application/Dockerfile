@@ -1,4 +1,4 @@
 FROM amazoncorretto:20
 VOLUME /tmp
 COPY target/*.jar codbex-helios.jar
-ENTRYPOINT ["java","-jar","/codbex-helios.jar"]
+ENTRYPOINT ["java", "java","--add-opens", "java.base/java.lang=ALL-UNNAMED", "--add-opens", "java.base/java.lang.reflect=ALL-UNNAMED", "--add-opens", "java.base/java.nio=ALL-UNNAMED", "-jar", "/codbex-helios.jar"]
