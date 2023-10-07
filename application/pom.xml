@@ -324,6 +324,11 @@
 			<artifactId>dirigible-components-ide-ui-workspace-service</artifactId>
 			<version>${dirigible.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-ide-ui-actions-service</artifactId>
+			<version>${dirigible.version}</version>
+		</dependency>
 		
 		<!-- Templates -->
 		<dependency>
