@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-group-core</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 			<type>pom</type>
 			<exclusions>
 				<exclusion>
@@ -40,19 +40,19 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-security-basic</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-security-keycloak</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		
 		<!-- Data -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-group-database</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 			<type>pom</type>
 		</dependency>
 		
@@ -60,53 +60,53 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-group-engines-core</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 			<type>pom</type>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-template</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-template-velocity</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-template-mustache</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-template-javascript</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-jobs</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-listeners</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-websockets</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-security</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-engine-openapi</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		
 		
@@ -114,7 +114,7 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-group-api-platform</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 			<type>pom</type>
 		</dependency>
 		
@@ -122,7 +122,7 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-group-resources-core</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 			<type>pom</type>
 		</dependency>
 		
@@ -130,251 +130,251 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-workspace</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-git</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-console</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-template</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		
 		<!-- IDE UI -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-about</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-console</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-csv</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-csvim</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-debugger</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-generate-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-git</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-git-branches</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-git-projects</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-git-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-image</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-import</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-logs</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-monaco</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-monaco-extensions</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-preview</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-problems</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-projects</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-properties</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-publisher-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-registry</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-registry-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-repository</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-repository-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-search</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-security</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-security-menu</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-staging</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-swagger</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-template-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-transport-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-welcome</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-workbench</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-workspace-menu</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-workspace-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-actions-service</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		
 		<!-- Templates -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-database-access</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-database-table</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-database-view</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-hello-world</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-html</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-http-client</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-job</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-listener</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-template-websocket</artifactId>
-			<version>${dirigible.version}</version>
+<!--			<version>${dirigible.version}</version>-->
 		</dependency>
 
 	</dependencies>
@@ -385,7 +385,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring.boot.version}</version>
+<!--				<version>${spring.boot.version}</version>-->
 				<configuration>
 					<mainClass>com.codbex.helios.HeliosApplication</mainClass>
 				</configuration>
