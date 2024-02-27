@@ -13,23 +13,20 @@ package com.codbex.helios.ui.tests;
 
 import com.codbex.helios.ui.Helios;
 import org.eclipse.dirigible.tests.framework.HtmlElementType;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 class HomePageIT extends UserInterfaceIntegrationTest {
 
     private static final String CODBEX_HEADER = "codbex";
 
+    @Autowired
     private Helios helios;
-
-    @BeforeEach
-    void setUp() {
-        this.helios = new Helios(browser);
-    }
 
     @Test
     void testOpenHomepage() {
         helios.openHomePage();
 
         browser.assertElementExistsByTypeAndText(HtmlElementType.HEADER5, CODBEX_HEADER);
-    }}
+    }
+}

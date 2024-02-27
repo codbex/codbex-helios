@@ -11,13 +11,18 @@
  */
 package com.codbex.helios.ui;
 
-import com.codeborne.selenide.SelenideElement;
 import org.eclipse.dirigible.tests.framework.Browser;
 import org.eclipse.dirigible.tests.framework.HtmlAttribute;
 import org.eclipse.dirigible.tests.framework.HtmlElementType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
 
+@Component
+@Lazy
+@ComponentScan("org.eclipse.dirigible.tests.framework")
 public class Helios {
     private static final Logger LOGGER = LoggerFactory.getLogger(Helios.class);
 
@@ -33,7 +38,6 @@ public class Helios {
     private static final String SUBMIT_TYPE = "submit";
 
     private static final String SIGN_IN_BUTTON_TEXT = "Sign in";
-
     private final Browser browser;
 
     public Helios(Browser browser) {
