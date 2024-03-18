@@ -326,7 +326,7 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-tests-framework</artifactId>
-			<version>10.0.5</version>
+			<version>10.1.0</version>
 			<scope>test</scope>
 		</dependency>
 
