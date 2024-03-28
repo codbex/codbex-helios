@@ -395,6 +395,10 @@
         <javax.websocket-api.version>1.1</javax.websocket-api.version>
         <jacoco.version>0.8.11</jacoco.version>
 
+        <ngdbc.version>2.20.11</ngdbc.version>
+        <snowflake.version>3.13.34</snowflake.version>
+        <mongodb.version>3.12.14</mongodb.version>
+
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
         <org.springdoc.openapi.ui.version>1.8.0</org.springdoc.openapi.ui.version>
         <swagger-annotations.version>1.6.9</swagger-annotations.version>
