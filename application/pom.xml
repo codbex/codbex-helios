@@ -376,6 +376,51 @@
 			<artifactId>dirigible-components-template-websocket</artifactId>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-database-sql-hana</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+		<artifactId>dirigible-database-sql-mysql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-database-sql-postgres</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-database-sql-sybase</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-database-sql-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-database-sql-snowflake</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-database-mongodb-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sap.cloud.db.jdbc</groupId>
+			<artifactId>ngdbc</artifactId>
+			<version>${ngdbc.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>net.snowflake</groupId>
+		    <artifactId>snowflake-jdbc</artifactId>
+		    <version>${snowflake.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -385,12 +430,6 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-tests-framework</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-tests-framework</artifactId>
-			<version>10.2.2</version>
 			<scope>test</scope>
 		</dependency>
 
