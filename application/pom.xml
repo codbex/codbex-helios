@@ -21,6 +21,11 @@
             <artifactId>codbex-helios-branding</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.codbex.helios</groupId>
+            <artifactId>codbex-helios-welcome</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
 
 		<!-- Core -->
 		<dependency>
@@ -252,10 +257,6 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-ui-transport-service</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-ide-ui-welcome</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
