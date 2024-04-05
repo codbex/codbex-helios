@@ -132,6 +132,10 @@
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ide-template</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-ide-terminal</artifactId>
+		</dependency>
 		
 		<!-- IDE UI -->
 		<dependency>
@@ -307,37 +311,41 @@
 			<artifactId>dirigible-components-ide-ui-transport-service</artifactId>
 		</dependency>
 		<dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-ide-ui-data-structures</artifactId>
-        </dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-ide-ui-data-structures</artifactId>
+		</dependency>
 		<dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-ide-ui-extensions</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-ide-ui-extensions-menu</artifactId>
-        </dependency>
+            		<groupId>org.eclipse.dirigible</groupId>
+            		<artifactId>dirigible-components-ide-ui-extensions</artifactId>
+        	</dependency>
+        	<dependency>
+            		<groupId>org.eclipse.dirigible</groupId>
+            		<artifactId>dirigible-components-ide-ui-extensions-menu</artifactId>
+        	</dependency>
 		<dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-ide-ui-jobs</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-ide-ui-jobs-menu</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-ide-ui-listeners</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-ide-ui-listeners-menu</artifactId>
-        </dependency>
+            		<groupId>org.eclipse.dirigible</groupId>
+            		<artifactId>dirigible-components-ide-ui-jobs</artifactId>
+        	</dependency>
+        	<dependency>
+            		<groupId>org.eclipse.dirigible</groupId>
+            		<artifactId>dirigible-components-ide-ui-jobs-menu</artifactId>
+        	</dependency>
+        	<dependency>
+            		<groupId>org.eclipse.dirigible</groupId>
+            		<artifactId>dirigible-components-ide-ui-listeners</artifactId>
+        	</dependency>
+        	<dependency>
+            		<groupId>org.eclipse.dirigible</groupId>
+            		<artifactId>dirigible-components-ide-ui-listeners-menu</artifactId>
+        	</dependency>
 		<dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-ide-ui-operations</artifactId>
-        </dependency>
+            		<groupId>org.eclipse.dirigible</groupId>
+            		<artifactId>dirigible-components-ide-ui-operations</artifactId>
+        	</dependency>
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-ide-ui-terminal</artifactId>
+		</dependency>
 		
 		<!-- Templates -->
 		<dependency>
