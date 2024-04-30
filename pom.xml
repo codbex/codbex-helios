@@ -397,7 +397,7 @@
         <jacoco.version>0.8.12</jacoco.version>
 
         <ngdbc.version>2.20.17</ngdbc.version>
-        <snowflake.version>3.15.1</snowflake.version>
+        <snowflake.version>3.16.0</snowflake.version>
         <mongodb.version>3.12.14</mongodb.version>
 
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
