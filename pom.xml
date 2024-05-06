@@ -298,7 +298,7 @@
 
         <!-- JDBC -->
 		<ngdbc.version>2.20.17</ngdbc.version>
-		<snowflake.version>3.13.34</snowflake.version>
+		<snowflake.version>3.16.0</snowflake.version>
 
         <profile.content.phase>none</profile.content.phase>
 
