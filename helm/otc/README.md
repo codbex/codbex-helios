@@ -26,7 +26,13 @@ helm uninstall $RELEASE_NAME --wait --namespace $NAMESPACE
 helm install $RELEASE_NAME . --wait --namespace $NAMESPACE --create-namespace 
 
 # Upgrade
-helm upgrade $RELEASE_NAME . --install --atomic --namespace $NAMESPACE --create-namespace 
+helm upgrade $RELEASE_NAME . --install --atomic \
+  --wait --namespace $NAMESPACE --create-namespace 
+
+# Upgrade from URL
+CHART_URL='https://github.com/codbex/codbex-helios/releases/download/v1.15.0/codbex-helios-1.15.0.tgz'
+helm upgrade $RELEASE_NAME "$CHART_URL" --install --atomic \
+  --wait --namespace $NAMESPACE --create-namespace 
 
 ###################################
 # Other installation commands
