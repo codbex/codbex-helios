@@ -1,0 +1,43 @@
+name: codbex-helios
+
+image:
+  registry: ghcr.io
+  repository: codbex/codbex-helios
+  tag: 1.3.0
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort # could be NodePort and LoadBalancer - ClusterIP not supported with OTC ELB
+#  loadBalancerIp: '164.30.19.122' # use it if type is LoadBalancer
+  ports:
+    http: 80
+
+ingress:
+  enabled: true
+  path: '/'
+  port: 80
+  elb:
+    autocreate: true
+    existing:
+      id: <id-of-your-elb>
+      class: <union|performance> # `union` for  shared load balancer `performance` for dedicated load balancer
+
+resources:
+  limits: # max resources
+    cpu: "8"
+    memory: "16Gi"
+#  limits: {} # no max limitations
+  requests: # min resources
+    cpu: "1"
+    memory: "2Gi"
+
+volume:
+  enabled: true
+  path: '/target'
+  storage: 2Gi
+  storageClassName: ssd
+
+helios:
+  admin:
+    base64User: YWRtaW4= # admin
+    base64Pass: YWRtaW4= # admin
