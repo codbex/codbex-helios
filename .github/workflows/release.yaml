@@ -17,6 +17,7 @@ run-name: 'version set to ${{ inputs.release-version }} for release'
 jobs:
   main:
     uses: codbex/codbex-infra/.github/workflows/platform-release.yaml@main
+    secrets: inherit
     with:
       platform-name: codbex-helios
       maven-release: true
