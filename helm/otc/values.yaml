@@ -4,7 +4,7 @@ image:
   registry: ghcr.io
   repository: codbex/codbex-helios
   tag: 1.22.0
-  pullPolicy: IfNotPresent
+  pullPolicy: Always # Always or IfNotPresent
 
 service:
   type: NodePort # could be NodePort and LoadBalancer - ClusterIP not supported with OTC ELB
