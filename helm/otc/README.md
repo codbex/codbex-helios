@@ -7,9 +7,6 @@ export KUBECONFIG='<path-to-your-kubeconfig>'
 
 export CHART_FOLDER="$GIT_REPO/helm/otc"
 
-export GIT_REPO='/Users/iliyan/work/git/codbex-helios'
-export KUBECONFIG='/Users/iliyan/work/work-share/projects/open-telekom-cloud/marketplace/otc-deployment/kubeconfig-marketplace-app-testing.yaml'
-
 # lint the chart
 helm lint .
 

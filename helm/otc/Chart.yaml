@@ -7,8 +7,11 @@ appVersion: 1.3.0
 description: https://codbex.com/products/helios
 home: https://github.com/codbex/codbex-helios
 keywords:
-- low-code
+- low-code-platform
 - ide
+- web-ide
+- type-script
+- java-script
 maintainers:
 - name: codbex
   url: https://github.com/codbex
