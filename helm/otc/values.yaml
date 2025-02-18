@@ -3,7 +3,7 @@ name: codbex-helios
 image:
   registry: ghcr.io
   repository: codbex/codbex-helios
-  tag: 1.19.0
+  tag: 1.20.0
   pullPolicy: IfNotPresent
 
 service:
