@@ -8,7 +8,7 @@ image:
 
 service:
   type: NodePort # could be NodePort and LoadBalancer - ClusterIP not supported with OTC ELB
-#  loadBalancerIp: '164.30.19.122' # use it if type is LoadBalancer
+  loadBalancerIp: '<your-lb-ip>' # use it if type is LoadBalancer
   ports:
     http: 80
 
@@ -39,5 +39,5 @@ volume:
 
 helios:
   admin:
-    base64User: YWRtaW4= # admin
-    base64Pass: YWRtaW4= # admin
+    base64User: YWRtaW4= # base64 encoded `admin`
+    base64Pass: YWRtaW4= # base64 encoded `admin`

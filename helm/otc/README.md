@@ -6,11 +6,6 @@ export RELEASE_NAME='my-codbex-helios'
 export KUBECONFIG='<path-to-your-kubeconfig>'
 export NAMESPACE='default'
 
-# Iliyans config
-export GIT_REPO='/Users/iliyan/work/git/codbex-helios'
-export KUBECONFIG='/Users/iliyan/work/work-share/projects/open-telekom-cloud/marketplace/otc-deployment/kubeconfig-marketplace-app-testing.yaml'
-export NAMESPACE='iliyan'
-
 export CHART_FOLDER="$GIT_REPO/helm/otc"
 
 # lint the chart
