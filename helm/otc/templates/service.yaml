@@ -6,7 +6,6 @@ metadata:
   name: {{ .Values.name }}-svc
 spec:
   internalTrafficPolicy: Cluster # Service should route traffic to any node in the cluster.
-#  ipFamilyPolicy: PreferDualStack # Tries to create a dual-stack service (IPv4 and IPv6), but falls back to SingleStack if dual-stack is unavailable.
   ports:
   - name: http
     port: {{ .Values.service.ports.http }}

@@ -1,3 +1,4 @@
+# OTC ingress spec: https://docs.otc.t-systems.com/cloud-container-engine/umn/network/ingresses/loadbalancer_ingresses/using_kubectl_to_create_a_loadbalancer_ingress.html
 {{- if .Values.ingress.enabled }}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -34,8 +35,5 @@ spec:
                 port:
                   number: {{ .Values.service.ports.http }}
             pathType: Prefix
-#            property:
-#              ingress.beta.kubernetes.io/url-match-mode: STARTS_WITH
-#            pathType: ImplementationSpecific # Prefix
   ingressClassName: cce    # OTC LoadBalancer is used.
 {{- end }}

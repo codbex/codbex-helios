@@ -1,9 +1,9 @@
 ## Chart installation steps
 
 ```shell
+export KUBECONFIG='<path-to-your-kubeconfig>'
 export GIT_REPO='<path-to-your-git-repo>'
 export RELEASE_NAME='my-codbex-helios'
-export KUBECONFIG='<path-to-your-kubeconfig>'
 export NAMESPACE='default'
 
 export CHART_FOLDER="$GIT_REPO/helm/otc"
@@ -30,7 +30,7 @@ helm upgrade $RELEASE_NAME . --install --atomic \
   --wait --namespace $NAMESPACE --create-namespace 
 
 # Upgrade from URL
-CHART_URL='https://github.com/codbex/codbex-helios/releases/download/v1.15.0/codbex-helios-1.15.0.tgz'
+CHART_URL='https://github.com/codbex/codbex-helios/releases/download/v1.19.0/codbex-helios-1.19.0-otc.tgz'
 helm upgrade $RELEASE_NAME "$CHART_URL" --install --atomic \
   --wait --namespace $NAMESPACE --create-namespace 
 
