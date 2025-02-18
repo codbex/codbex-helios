@@ -5,18 +5,18 @@ APP VERSION: {{ .Chart.AppVersion }}
 
 ** Please be patient while the chart is being deployed **
 
-{{- if .Values.ingress.elb.autocreate }}
+{{- if and .Values.ingress.enabled .Values.ingress.elb.autocreate }}
 1. Get the application URL by running:
 
     export ELB_IP=$(kubectl get ingress {{ .Values.name }}-ingress -o jsonpath='{.metadata.annotations.kubernetes\.io/elb\.ip}')
     echo "App URL: http://$ELB_IP:{{ .Values.ingress.port }}{{ .Values.ingress.path }}"
-  {{- end }}
+{{- end }}
 
- {{- if eq .Values.service.type "LoadBalancer" }}
- 1. Get the application URL by running:
+{{- if eq .Values.service.type "LoadBalancer" }}
+1. Get the application URL by running:
 
-     export ELB_IP=$(kubectl get svc {{ .Values.name }}-svc -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
-     echo "App URL: http://$ELB_IP:{{ .Values.service.ports.http }}"
+    export ELB_IP=$(kubectl get svc {{ .Values.name }}-svc -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+    echo "App URL: http://$ELB_IP:{{ .Values.service.ports.http }}"
 {{- end }}
 
 {{- if not .Values.ingress.elb.autocreate }}
