@@ -1,0 +1,26 @@
+
+CHART NAME: {{ .Chart.Name }}
+CHART VERSION: {{ .Chart.Version }}
+APP VERSION: {{ .Chart.AppVersion }}
+
+** Please be patient while the chart is being deployed **
+
+{{- if and .Values.ingress.enabled .Values.ingress.elb.autocreate }}
+1. Get the application URL by running:
+
+    export ELB_IP=$(kubectl get ingress {{ .Values.name }}-ingress -o jsonpath='{.metadata.annotations.kubernetes\.io/elb\.ip}' -n {{ .Release.Namespace }})
+    echo "App URL: http://$ELB_IP:{{ .Values.ingress.port }}{{ .Values.ingress.path }}"
+{{- end }}
+
+{{- if eq .Values.service.type "LoadBalancer" }}
+1. Get the application URL by running:
+
+    export ELB_IP=$(kubectl get svc {{ .Values.name }}-svc -o jsonpath='{.status.loadBalancer.ingress[0].ip}'  -n {{ .Release.Namespace }})
+    echo "App URL: http://$ELB_IP:{{ .Values.service.ports.http }}"
+{{- end }}
+
+{{- if not .Values.ingress.elb.autocreate }}
+1. To access the application, open URL http://<elb-ip>:{{ .Values.ingress.port }}{{ .Values.ingress.path }} where <elb-ip> is the IP address of used OTC Elastic Load Balancer.
+{{- end }}
+
+    NOTE: Default credentials are username `admin` and password `admin`, unless you have specified custom credentials via `helios.admin.base64User` and `helios.admin.base64Pass`.
