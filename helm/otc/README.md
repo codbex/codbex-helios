@@ -4,6 +4,12 @@
 export GIT_REPO='<path-to-your-git-repo>'
 export RELEASE_NAME='my-codbex-helios'
 export KUBECONFIG='<path-to-your-kubeconfig>'
+export NAMESPACE='default'
+
+# Iliyans config
+export GIT_REPO='/Users/iliyan/work/git/codbex-helios'
+export KUBECONFIG='/Users/iliyan/work/work-share/projects/open-telekom-cloud/marketplace/otc-deployment/kubeconfig-marketplace-app-testing.yaml'
+export NAMESPACE='iliyan'
 
 export CHART_FOLDER="$GIT_REPO/helm/otc"
 
@@ -19,31 +25,40 @@ rm -f *.tgz
 helm package .
 
 # Uninstall previous release
-helm uninstall $RELEASE_NAME --wait
+helm uninstall $RELEASE_NAME --wait --namespace $NAMESPACE
 
 # Default installation
-helm install $RELEASE_NAME . --wait
+helm install $RELEASE_NAME . --wait --namespace $NAMESPACE --create-namespace 
+
+# Upgrade
+helm upgrade $RELEASE_NAME . --install --atomic --namespace $NAMESPACE --create-namespace 
 
 ###################################
 # Other installation commands
 ###################################
 
 ## Install with disabled volumes
-helm install $RELEASE_NAME . --set volume.enabled=false --wait
+helm install $RELEASE_NAME . --set volume.enabled=false \
+  --wait --namespace $NAMESPACE
 
 ## Install with modified base path
-helm install $RELEASE_NAME . --set ingress.path=/my-path --wait
+helm install $RELEASE_NAME . --set ingress.path=/my-path \
+  --wait --namespace $NAMESPACE
 
 ## Install with disabled ingress
-helm install $RELEASE_NAME . --set ingress.enabled=false --wait
+helm install $RELEASE_NAME . --set ingress.enabled=false \
+  --wait --namespace $NAMESPACE
 
 ## Install with LoadBalancer service
 export LB_IP='80.158.91.18'
-helm install $RELEASE_NAME . --set ingress.enabled=false --set service.type=LoadBalancer --set service.loadBalancerIp=$LB_IP --wait
+helm install $RELEASE_NAME . --set ingress.enabled=false --set service.type=LoadBalancer \
+  --set service.loadBalancerIp=$LB_IP --wait --namespace $NAMESPACE
 
 ## Install with existing ELB for ingress
 export ELB_ID='646c69e0-a1d2-47ac-9ee4-cd9c0e011d50'
 export ELB_TYPE='union'
-helm install $RELEASE_NAME . --set ingress.elb.autocreate=false --set ingress.elb.existing.id=$ELB_ID --set ingress.elb.existing.class=$ELB_TYPE --wait
+helm install $RELEASE_NAME . --set ingress.elb.autocreate=false \
+  --set ingress.elb.existing.id=$ELB_ID --set ingress.elb.existing.class=$ELB_TYPE \
+  --wait --namespace $NAMESPACE
 
 ```
