@@ -12,3 +12,4 @@ jobs:
     with:
       platform-name: codbex-helios
       docker-build: true
+      release-otc-helm-chart: true
