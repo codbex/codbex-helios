@@ -48,4 +48,7 @@ spec:
           value: {{ .Values.helios.admin.base64User | quote }}
         - name: DIRIGIBLE_BASIC_PASSWORD
           value: {{ .Values.helios.admin.base64Pass | quote }}
-
+      {{- if .Values.image.pullSecrets }}
+      imagePullSecrets:
+        - name: "{{ .Values.image.pullSecrets }}"
+      {{- end }}

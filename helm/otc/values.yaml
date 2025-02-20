@@ -5,6 +5,7 @@ image:
   repository: codbex/codbex-helios
   tag: 1.27.0
   pullPolicy: Always # Always or IfNotPresent
+  pullSecrets: "" # Optional, set to a secret name if needed
 
 service:
   type: NodePort # could be NodePort and LoadBalancer - ClusterIP not supported with OTC ELB
