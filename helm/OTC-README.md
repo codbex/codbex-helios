@@ -25,12 +25,15 @@ helm uninstall $RELEASE_NAME --wait --namespace $NAMESPACE
 # Default installation
 helm install $RELEASE_NAME . --wait --namespace $NAMESPACE --create-namespace 
 
+# Install from OCI
+helm install $RELEASE_NAME oci://ghcr.io/codbex/helm/codbex-helios-1.24.0-otc/codbex-helios --version 1.24.0 --atomic --timeout 2m0s
+
 # Upgrade
 helm upgrade $RELEASE_NAME . --install --atomic \
   --wait --namespace $NAMESPACE --create-namespace 
 
 # Upgrade from URL
-CHART_URL='https://github.com/codbex/codbex-helios/releases/download/v1.19.0/codbex-helios-1.19.0-otc.tgz'
+CHART_URL='https://github.com/codbex/codbex-helios/releases/download/v1.20.0/codbex-helios-1.20.0-otc.tgz'
 helm upgrade $RELEASE_NAME "$CHART_URL" --install --atomic \
   --wait --namespace $NAMESPACE --create-namespace 
 
