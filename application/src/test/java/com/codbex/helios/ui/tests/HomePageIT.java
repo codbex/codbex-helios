@@ -24,6 +24,7 @@ class HomePageIT extends UserInterfaceIntegrationTest {
     void testOpenHomepage() {
         helios.openHomePage();
 
+        browser.assertElementExistsByTypeAndText(HtmlElementType.SPAN, "codbex");
         browser.assertElementExistsByTypeAndText(HtmlElementType.HEADER3, "Welcome to Helios");
     }
 }
