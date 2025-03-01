@@ -51,13 +51,6 @@
 			<artifactId>dirigible-components-security-snowflake</artifactId>
 		</dependency>
 
-		<!-- Data -->
-		<dependency>
-			<groupId>org.eclipse.dirigible</groupId>
-			<artifactId>dirigible-components-group-database</artifactId>
-			<type>pom</type>
-		</dependency>
-
 		<!-- Engine -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
@@ -195,7 +188,7 @@
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ui-service-workspace</artifactId>
-		</dependency>		
+		</dependency>
 
 		<!-- IDE UI Editors -->
 
