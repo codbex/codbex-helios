@@ -10,19 +10,14 @@
  */
 package com.codbex.helios.ui.tests;
 
-import com.codbex.helios.ui.Helios;
 import org.eclipse.dirigible.tests.framework.HtmlElementType;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
-class HomePageIT extends UserInterfaceIntegrationTest {
-
-    @Autowired
-    private Helios helios;
+class HomePageIT extends HeliosIntegrationTest {
 
     @Test
     void testOpenHomepage() {
-        helios.openHomePage();
+        ide.openHomePage();
 
         browser.assertElementExistsByTypeAndText(HtmlElementType.SPAN, "codbex");
         browser.assertElementExistsByTypeAndText(HtmlElementType.HEADER3, "Welcome to Helios");
