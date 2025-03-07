@@ -19,7 +19,7 @@ class HomePageIT extends HeliosIntegrationTest {
     void testOpenHomepage() {
         ide.openHomePage();
 
-        browser.assertElementExistsByTypeAndText(HtmlElementType.SPAN, "codbex");
+        browser.assertElementExistsByTypeAndText(HtmlElementType.SPAN, "Helios");
         browser.assertElementExistsByTypeAndText(HtmlElementType.HEADER3, "Welcome to Helios");
     }
 }
