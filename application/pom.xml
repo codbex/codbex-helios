@@ -121,7 +121,11 @@
 			<groupId>org.eclipse.dirigible</groupId>
 			<artifactId>dirigible-components-ui-shell-ide</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.eclipse.dirigible</groupId>
+			<artifactId>dirigible-components-ui-platform-branding</artifactId>
+		</dependency>
+		
 		<!-- IDE Backend -->
 		<dependency>
 			<groupId>org.eclipse.dirigible</groupId>
