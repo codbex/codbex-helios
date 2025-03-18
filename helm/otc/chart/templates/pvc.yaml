@@ -1,4 +1,6 @@
-{{- if .Values.volume.enabled }}
+{{- $volumeEnabled := (include "booleanToStringValue" (dict "value" .Values.volume.enabled)) | trim }}
+
+{{- if eq $volumeEnabled "true" }}
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
