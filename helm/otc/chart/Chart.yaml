@@ -1,19 +1,19 @@
 annotations:
   category: Web IDE
 apiVersion: v2
-name: codbex-rhea
+name: codbex-helios
 version: 3.0.0-SNAPSHOT
 appVersion: 3.0.0-SNAPSHOT
-description: https://codbex.com/products/rhea
-home: https://github.com/codbex/codbex-rhea
+description: https://codbex.com/products/helios
+home: https://github.com/codbex/codbex-helios
 keywords:
-- low-code-platform
-- ide
-- web-ide
-- type-script
-- java-script
+  - low-code-platform
+  - ide
+  - web-ide
+  - type-script
+  - java-script
 maintainers:
-- name: codbex
-  url: https://github.com/codbex
+  - name: codbex
+    url: https://github.com/codbex
 sources:
-- https://github.com/codbex/codbex-rhea
+  - https://github.com/codbex/codbex-helios
