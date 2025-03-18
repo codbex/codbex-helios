@@ -1,1 +1,2 @@
-/usr/local/opt/ttyd/bin/ttyd -p 9000 bash
+#!/bin/sh
+ttyd -p 9000 --writable sh
