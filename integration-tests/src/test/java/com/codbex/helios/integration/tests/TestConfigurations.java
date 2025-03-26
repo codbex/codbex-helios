@@ -8,18 +8,12 @@
  * SPDX-FileCopyrightText: 2022 codbex or an codbex affiliate company and contributors
  * SPDX-License-Identifier: EPL-2.0
  */
-package com.codbex.helios.ui.tests;
+package com.codbex.helios.integration.tests;
 
-import org.eclipse.dirigible.tests.framework.HtmlElementType;
-import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
-class HomePageIT extends HeliosIntegrationTest {
-
-    @Test
-    void testOpenHomepage() {
-        ide.openHomePage();
-
-        browser.assertElementExistsByTypeAndText(HtmlElementType.SPAN, "Helios");
-        browser.assertElementExistsByTypeAndText(HtmlElementType.HEADER3, "Welcome to Helios");
-    }
+@ComponentScan(basePackages = "org.eclipse.dirigible")
+@TestConfiguration
+class TestConfigurations {
 }

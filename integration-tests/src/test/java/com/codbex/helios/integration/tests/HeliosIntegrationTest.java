@@ -8,12 +8,11 @@
  * SPDX-FileCopyrightText: 2022 codbex or an codbex affiliate company and contributors
  * SPDX-License-Identifier: EPL-2.0
  */
-package com.codbex.helios.ui.tests;
+package com.codbex.helios.integration.tests;
 
-import org.springframework.boot.test.context.TestConfiguration;
-import org.springframework.context.annotation.ComponentScan;
+import org.eclipse.dirigible.tests.UserInterfaceIntegrationTest;
+import org.springframework.context.annotation.Import;
 
-@ComponentScan(basePackages = "org.eclipse.dirigible")
-@TestConfiguration
-class TestConfigurations {
+@Import(TestConfigurations.class)
+public abstract class HeliosIntegrationTest extends UserInterfaceIntegrationTest {
 }
