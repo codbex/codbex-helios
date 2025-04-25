@@ -9,7 +9,7 @@ Helios Edition contains JavaScript programming support standard components.
 It is good for exploration pro-code scenarios based on JavaScript language and Enterprise API.
 
 <!-- TOC -->
-* [codbex-helios](#codbex-helios)
+* [Helios by codbex](#helios-by-codbex)
   * [Run steps](#run-steps)
     * [Start using Docker and released image](#start-using-docker-and-released-image)
     * [Start using Docker and local sources](#start-using-docker-and-local-sources)
@@ -18,6 +18,7 @@ It is good for exploration pro-code scenarios based on JavaScript language and E
     * [Java standalone application](#java-standalone-application)
       * [Start the application](#start-the-application)
       * [Start the application **in debug** with debug port `8000`](#start-the-application-in-debug-with-debug-port-8000)
+      * [Spring profiles](#spring-profiles)
     * [Run unit tests](#run-unit-tests)
     * [Run integration tests](#run-integration-tests)
     * [Run all tests](#run-all-tests)
@@ -98,6 +99,12 @@ java \
     --add-opens=java.base/java.nio=ALL-UNNAMED \
     -jar application/target/codbex-helios-*.jar
 ```
+#### Spring profiles
+- Eclipse Dirigible profiles
+  To activate Eclipse Dirigible, you have to add profiles `common` and `app-default` explicitly.<br>
+  Example for profile `snowflake`: `SPRING_PROFILES_ACTIVE=common,snowflake,app-default`
+
+- Update table of content
 
 ---
 
