@@ -2,14 +2,13 @@ name: Pull Request - Platform
 
 on:
   pull_request:
-    branches: 
+    branches:
       - main
 
 jobs:
-  main:
+  pull-request:
     uses: codbex/codbex-infra/.github/workflows/platform-pull-request.yaml@main
     with:
       platform-name: codbex-helios
       docker-build: true
-      release-otc-helm-chart: true
     secrets: inherit

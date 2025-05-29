@@ -6,10 +6,10 @@ on:
       - main
 
 jobs:
-  main:
+  build:
     uses: codbex/codbex-infra/.github/workflows/platform-build.yaml@main
-    secrets: inherit
     with:
       platform-name: codbex-helios
       docker-build: true
       release-otc-helm-chart: true
+    secrets: inherit
