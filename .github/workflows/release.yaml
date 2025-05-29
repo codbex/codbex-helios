@@ -15,29 +15,27 @@ on:
 run-name: 'version set to ${{ inputs.release-version }} for release'
 
 jobs:
-  main:
+  release:
     uses: codbex/codbex-infra/.github/workflows/platform-release.yaml@main
-    secrets: inherit
     with:
       platform-name: codbex-helios
       maven-release: true
       release-version: ${{ inputs.release-version }}
       snapshot-version: ${{ inputs.snapshot-version }}
       docker-release: true
-      release-otc-helm-chart: true
       release-content: |
         ## codbex-helios - ${{ inputs.release-version }}
-  
+        
         JavaScript and TypeScript Pro-Code Platform
-  
+        
         ## Deployment
-   
+        
         ```
         docker run --name codbex-helios \
         --rm -p 80:80 -p 8081:8081 \
         ghcr.io/codbex/codbex-helios:${{ inputs.release-version }}
         ```
-  
+        
         ## Access points:
-  
+        
         - [/services/web/ide/](http://localhost/services/web/ide/) - Web IDE
