@@ -16,6 +16,24 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-ui-menu-database</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-ui-perspective-database</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-ui-view-databases</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-group-database</artifactId>
+            <type>pom</type>
+        </dependency>
+        <dependency>
             <groupId>com.codbex.helios</groupId>
             <artifactId>codbex-helios-branding</artifactId>
         </dependency>
