@@ -20,6 +20,7 @@ import org.junit.platform.suite.api.Suite;
 @SelectClasses({//
         CreateNewProjectIT.class, //
         CustomSecurityIT.class, //
+        DatabasePerspectiveIT.class, //
         GitPerspectiveIT.class, //
         HomepageRedirectIT.class, //
         MailIT.class, //
@@ -27,5 +28,5 @@ import org.junit.platform.suite.api.Suite;
         SecurityIT.class, //
         TerminalIT.class//
 })
-public class DirigibileCommonTestSuiteIT {
+public class DirigibleCommonTestSuiteIT {
 }
