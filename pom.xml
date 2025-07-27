@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.codbex.platform</groupId>
         <artifactId>codbex-platform-parent</artifactId>
-        <version>11.67.0</version>
+        <version>12.2.1</version>
     </parent>
 
     <name>codbex - helios - parent</name>
@@ -54,7 +54,7 @@
     <modules>
         <module>application</module>
         <module>branding</module>
-        <module>welcome</module>
+        <module>components</module>
         <module>integration-tests</module>
     </modules>
 
@@ -168,7 +168,12 @@
             </dependency>
             <dependency>
                 <groupId>com.codbex.helios</groupId>
-                <artifactId>codbex-helios-welcome</artifactId>
+                <artifactId>codbex-helios-components-ui-welcome</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codbex.helios</groupId>
+                <artifactId>codbex-helios-components-ui-menu-help</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
