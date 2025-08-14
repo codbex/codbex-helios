@@ -2,8 +2,8 @@ annotations:
   category: Web IDE
 apiVersion: v2
 name: codbex-helios
-version: 3.0.0-SNAPSHOT
-appVersion: 3.0.0-SNAPSHOT
+version: 2.64.0
+appVersion: 2.64.0
 description: https://codbex.com/products/helios
 home: https://github.com/codbex/codbex-helios
 keywords:
