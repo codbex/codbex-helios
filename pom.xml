@@ -5,10 +5,10 @@
     <parent>
         <groupId>com.codbex.platform</groupId>
         <artifactId>codbex-platform-parent</artifactId>
-        <version>12.31.0</version>
+        <version>12.55.1</version>
     </parent>
 
-    <name>codbex - helios - parent</name>
+    <name>codbex-helios-parent</name>
     <description>codbex helios</description>
     <groupId>com.codbex.helios</groupId>
     <artifactId>codbex-helios-parent</artifactId>

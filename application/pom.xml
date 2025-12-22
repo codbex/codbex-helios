@@ -42,6 +42,23 @@
             <type>pom</type>
         </dependency>
         <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-engine-cms</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-engine-cms-internal</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-engine-cms-s3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-api-cms</artifactId>
+		</dependency>
+        
+        <dependency>
             <groupId>com.codbex.helios</groupId>
             <artifactId>codbex-helios-branding</artifactId>
         </dependency>
@@ -159,17 +176,6 @@
             <groupId>org.eclipse.dirigible</groupId>
             <artifactId>dirigible-components-group-resources-ui</artifactId>
             <type>pom</type>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.dirigible</groupId>
-            <artifactId>dirigible-components-group-ide</artifactId>
-            <type>pom</type>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.eclipse.dirigible</groupId>
-                    <artifactId>dirigible-components-ui-view-welcome</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <!-- IDE Platform -->
