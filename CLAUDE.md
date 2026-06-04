@@ -15,6 +15,15 @@ When changing functionality, the relevant code usually lives in the upstream Dir
 artifacts, **not in this repo**. This repo controls *which* components are bundled, the branding,
 a couple of custom UI components, and the test suite wiring.
 
+Helios is one of a family of codbex products (see https://www.codbex.com/products/), each a
+differently-scoped assembly of the same platform/Dirigible components — e.g. **Atlas** (everything,
+incl. BPM and CMS), **Hades** (database management), **Hyperion** (BPM/BPMN via Flowable),
+**Iapetus** (integration/ETL via Apache Camel), **Phoebe** (workflows via Apache Airflow). Helios
+is the **API-focused JavaScript edition**: it deliberately omits the heavier engines (notably BPM)
+to stay a lean pro-code environment for building Enterprise APIs. That scoping is expressed entirely
+through the dependency set in `application/pom.xml` — the same lever you use to add or drop a
+component here.
+
 ## Build & run
 
 There is no Maven wrapper; use a system `mvn` (Java 21 / Amazon Corretto 21 per the Dockerfile).
