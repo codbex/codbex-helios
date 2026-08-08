@@ -53,6 +53,36 @@
             <groupId>org.eclipse.dirigible</groupId>
             <artifactId>dirigible-components-engine-cms-s3</artifactId>
         </dependency>
+
+        <!-- Java support: in-process compilation, entities, the client SDK, language server and debugger -->
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-engine-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-data-store-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-api-modules-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-ide-java-lsp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-ide-java-debug</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-ui-view-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-components-ui-view-java-debug</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.eclipse.dirigible</groupId>
             <artifactId>dirigible-components-api-cms</artifactId>
@@ -150,6 +180,16 @@
                 <exclusion>
                     <groupId>org.eclipse.dirigible</groupId>
                     <artifactId>dirigible-components-ui-menu-help</artifactId>
+                </exclusion>
+                <!-- Intent Driven tooling: there is no intent engine in this edition to back it -->
+                <exclusion>
+                    <groupId>org.eclipse.dirigible</groupId>
+                    <artifactId>dirigible-components-resources-builder</artifactId>
+                </exclusion>
+                <!-- BPM task inbox: there is no BPM engine in this edition to back it -->
+                <exclusion>
+                    <groupId>org.eclipse.dirigible</groupId>
+                    <artifactId>dirigible-components-resources-inbox</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>

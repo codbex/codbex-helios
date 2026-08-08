@@ -22,6 +22,18 @@ security, and extensions — but deliberately *without* the heavier engines such
 That scoping is expressed entirely through the dependency set in `application/pom.xml` — the same
 lever you use to add or drop a component here.
 
+**Three deliberate departures from the platform defaults**, all in the edition's own configuration:
+
+- **Full Java support alongside JavaScript.** `engine-java` (in-process `javac` + the bean container), `data-store-java` (Java `@Entity` -> Hibernate), the `api-modules-java` SDK, `ide-java-lsp` (JDT.LS), `ide-java-debug` (the DAP bridge) and the Java / Java Debug views. Note that the SDK exposes `org.eclipse.dirigible.sdk.bpm`, so `api-modules-java` -> `api-bpm` -> `engine-bpm-flowable` puts the BPM engine on the classpath; this edition ships none of the BPM tooling.
+- **No Intent Driven tooling.** There is no `engine-intent`, so `resources-builder` (the conversational Builder shell) is excluded from `group-ui` rather than shipped with nothing behind it. `resources-inbox` is excluded for the same reason - the BPM task inbox has no BPM surface here.
+- **Home is the Workbench IDE.** `DIRIGIBLE_HOME_URL=services/web/shell-ide/` in `dirigible.properties`, overriding the platform's 14.16.0+ default of `services/web/home/`. The launchpad stays reachable at `/services/web/home/`; only the `/` redirect changes. Consequence: upstream's `HomepageRedirectIT` asserts the platform default and cannot run here - it was dropped from the common suite, and the edition's own `HomePageIT` (Workbench welcome view on `/`) guards the override.
+
+## Dirigible version
+
+The version is pinned by `codbex-platform-parent` through its `dirigible.version` property; parent releases track Dirigible releases 1:1 (parent 14.17.0 -> Dirigible 14.17.0), so bumping the edition means bumping the parent. Bumps are not mechanical - Dirigible removes things: the OData engine was extracted in 14.16.0 (un-managing `com.codbex.olingo:olingo-odata2-lib`, which fails a version-less declaration at model-read time) and the AngularJS/TypeScript application templates went with it.
+
+**The UI overrides under `components/ui/` are forks of upstream files** - diff them against the matching Dirigible module on every bump; they drift silently (translations must live in `i18n/<locale>/*.json`, the only folder `platform-core/extension-services/locales.js` scans).
+
 ## Build & run
 
 There is no Maven wrapper; use a system `mvn` (Java 21 / Amazon Corretto 21 per the Dockerfile).
