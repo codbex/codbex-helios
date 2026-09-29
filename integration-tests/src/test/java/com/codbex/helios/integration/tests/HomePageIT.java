@@ -15,11 +15,21 @@ import org.junit.jupiter.api.Test;
 
 class HomePageIT extends HeliosIntegrationTest {
 
+    /**
+     * The root path lands on the Home launchpad, which carries no IDE perspectives - the Workbench
+     * welcome view is asserted separately.
+     */
     @Test
-    void testOpenHomepage() {
+    void testOpenHomePage() {
         ide.openHomePage();
 
         browser.assertElementExistsByTypeAndText(HtmlElementType.SPAN, "Helios");
+    }
+
+    @Test
+    void testOpenWorkbench() {
+        ide.openIde();
+
         browser.assertElementExistsByTypeAndText(HtmlElementType.HEADER3, "Welcome to Helios");
     }
 }
