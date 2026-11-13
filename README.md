@@ -4,9 +4,9 @@
 [![Eclipse License](https://img.shields.io/badge/License-EPL%202.0-brightgreen.svg)](https://github.com/codbex/codbex-helios/blob/main/LICENSE)
 [![Maven Central](https://img.shields.io/maven-central/v/com.codbex.helios/codbex-helios-application.svg)](https://central.sonatype.com/namespace/com.codbex.helios)
 
-Helios Edition contains JavaScript programming support standard components.
+Helios Edition contains pro-code development standard components.
 
-It is good for exploration pro-code scenarios based on JavaScript language and Enterprise API.
+It is good for exploration pro-code scenarios based on Enterprise API.
 
 <!-- TOC -->
 * [Helios by codbex](#helios-by-codbex)

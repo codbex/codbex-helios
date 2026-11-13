@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Helios is the **JavaScript / pro-code edition** of the codbex platform — a thin Spring Boot
+Helios is the **pro-code edition** of the codbex platform — a thin Spring Boot
 distribution that assembles [Eclipse Dirigible](https://github.com/eclipse/dirigible) components
 into a runnable, brandable web application. There is very little original Java here: almost all
 behavior (web IDE, engines, security, database tooling, APIs) comes from `org.eclipse.dirigible:*`
@@ -15,10 +15,11 @@ When changing functionality, the relevant code usually lives in the upstream Dir
 artifacts, **not in this repo**. This repo controls *which* components are bundled, the branding,
 a couple of custom UI components, and the test suite wiring.
 
-Helios is the **API-focused JavaScript edition** of the codbex platform (see
-https://www.codbex.com/products/): a lean pro-code environment for building Enterprise APIs in
-JavaScript, with UI, debugger, Git, theming, databases, jobs, message listeners, websockets,
-security, and extensions — but deliberately *without* the heavier engines such as BPM and CMS.
+Helios is the **API-focused pro-code edition** of the codbex platform (see
+https://www.codbex.com/products/): a lean pro-code environment for building Enterprise APIs,
+with UI, Git, theming, databases, jobs, message listeners, websockets, security, and
+extensions — but deliberately *without* the heavier engines such as BPM and CMS. It no longer
+ships the server-side JavaScript/TypeScript engine (GraalJS), which Dirigible removes in 16.0.
 That scoping is expressed entirely through the dependency set in `application/pom.xml` — the same
 lever you use to add or drop a component here.
 
@@ -75,7 +76,7 @@ Reactor modules (parent `pom.xml`): `application`, `branding`, `components`, `in
   and **excludes** the JDBC/JPA datasource auto-configurations (Dirigible manages datasources
   itself). The long dependency list in `application/pom.xml` is the actual product definition —
   add/remove a `dirigible-components-*` dependency to include/exclude an IDE view, engine, editor,
-  template, or security provider. Also contains the `Dockerfile` (Corretto 21 + ttyd/node/git/fonts).
+  template, or security provider. Also contains the `Dockerfile` (Corretto 21 + ttyd/git/fonts).
 - **`branding/`** & **`components/`** — packaged as Dirigible content, not normal Java. Resources
   under `src/main/resources/META-INF/dirigible/<guid>/` (each with a `project.json`) are loaded
   into the Dirigible registry at runtime. `branding` supplies logo/favicon; `components/ui/menu-help`

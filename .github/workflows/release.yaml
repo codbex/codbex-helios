@@ -28,13 +28,13 @@ jobs:
       release-content: |
         ## codbex-helios - ${{ inputs.release-version }}
         
-        JavaScript and TypeScript Pro-Code Platform
+        Pro-Code Platform
         
         ## Deployment
         
         ```
         docker run --name codbex-helios \
-        --rm -p 80:80 -p 8081:8081 \
+        --rm -p 80:80 \
         ghcr.io/codbex/codbex-helios:${{ inputs.release-version }}
         ```
         
