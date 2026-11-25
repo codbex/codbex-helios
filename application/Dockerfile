@@ -1,4 +1,4 @@
-FROM amazoncorretto:21-alpine
+FROM amazoncorretto:25-alpine
 
 VOLUME /tmp
 
@@ -13,5 +13,5 @@ RUN apk add git
 RUN apk --no-cache add msttcorefonts-installer fontconfig && update-ms-fonts && fc-cache -f
 
 COPY target/codbex-helios-[0-9]*.jar codbex-helios.jar
-ENTRYPOINT ["java", "--add-opens", "java.base/java.lang=ALL-UNNAMED", "--add-opens", "java.base/java.lang.reflect=ALL-UNNAMED", "--add-opens", "java.base/java.nio=ALL-UNNAMED", "-jar", "/codbex-helios.jar"]
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=50.0", "-XX:+ExitOnOutOfMemoryError", "-XX:+UseCompactObjectHeaders", "--add-opens", "java.base/java.lang=ALL-UNNAMED", "--add-opens", "java.base/java.lang.reflect=ALL-UNNAMED", "--add-opens", "java.base/java.nio=ALL-UNNAMED", "-jar", "/codbex-helios.jar"]
 EXPOSE 80 8081
